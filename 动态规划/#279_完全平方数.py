@@ -48,29 +48,30 @@
 # a = m * (m-1)**(n-1)
 # print(sum-a)
 
-n,m = input().split()
-n = int(n)
-m = int(m)
-c = [0]
-w = [0]
-m = [-1]
-blod = 2
-for i in range(n):
-    c_,w_ = map(int,input().split())
-    c.append(c_)
-    w.append(w_)
-for i in range(1,n+1):
-    if c[i] > blod:
-        need_money = (c[i]-blod)//2 +1
-        money = m[i-1] - need_money + w[i]
-        m.append(money)
-        blod = blod + need_money*2-c[i]
-    else:
-        money = m[i-1] + w[i]
-        blod = blod - c[i]
-        m.append(money)
-print(c)
-print(w)
-print(max(m))
+# n,m = input().split()
+# n = int(n)
+# m = int(m)
+# c = [0]
+# w = [0]
+# m = [-1]
+# blod = 2
+# for i in range(n):
+#     c_,w_ = map(int,input().split())
+#     c.append(c_)
+#     w.append(w_)
+# for i in range(1,n+1):
+#     if c[i] > blod:
+#         need_money = (c[i]-blod)//2 +1
+#         money = m[i-1] - need_money + w[i]
+#         m.append(money)
+#         blod = blod + need_money*2-c[i]
+#     else:
+#         money = m[i-1] + w[i]
+#         blod = blod - c[i]
+#         m.append(money)
+# print(c)
+# print(w)
+# print(max(m))
 
-
+import random
+print(random.uniform(10,0))
