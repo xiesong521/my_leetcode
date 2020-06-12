@@ -9,7 +9,7 @@
 
 """
 class Solution:
-    def detectCycle(self, head: ListNode) -> ListNode:
+    def detectCycle(self, head) :
         Node_list = []
         current = head
         pos = -1
